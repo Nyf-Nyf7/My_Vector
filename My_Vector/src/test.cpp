@@ -8,8 +8,9 @@
 int main(void) {
 
 	/*
-	ƒемонстраци€ работы классов вещественных чисел MySatur
-	
+	This is an example of usage of a custom template-based dynamic array, 
+	Along with a user-defined numeric type My_Float based on rational number representation, 
+	And includes a derived class MySatur that introduces saturation arithmetic, limiting values within a fixed range.
 	*/
 
 	Vector <MySatur> a(3);
@@ -31,12 +32,12 @@ int main(void) {
 
 	printf("========================\n\n\n");
 
-	Vector <double> c(3);
+	Vector <My_Float> c(3);
 	c[0] = 3.14;
 	c[2] = 234.23;
 	c.print(); printf(" - a\n\n\n");
 
-	Vector <double> d(3);
+	Vector <My_Float> d(3);
 
 	d[0] = 22.7;
 	d[1] = 3.14;

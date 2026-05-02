@@ -25,6 +25,15 @@ protected:
 	}
 
 public:
+	
+	My_Float(int num)
+	{
+
+		numerator = num;
+		denominator = 1;
+
+		normalize();
+	}
 
 	My_Float(long long int num = 0, long long int denom = 1) {
 

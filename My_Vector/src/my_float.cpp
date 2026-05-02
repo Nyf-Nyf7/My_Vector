@@ -1,7 +1,7 @@
 #include <cmath>
 #include "my_float.h"
 
-//Сокращение по Алгоритму Евклида для поиска НОД
+
 long long int gcd(long long int a, long long int b) {
 
 	a = abs(a);

@@ -62,7 +62,7 @@ public:
 		return sz;
 	}
 
-	//конструктор копирования
+
 	Vector(const Vector& other) {
 
 		sz = other.sz;
@@ -71,7 +71,7 @@ public:
 	}
 
 	
-	//конструктор перемещения
+
 	Vector(Vector&& other) noexcept {
 
 		sz = other.sz;
@@ -81,7 +81,7 @@ public:
 	}
 	
 
-	//оператор присваивания
+
 	Vector& operator=(const Vector& other) {
 
 		if (this == &other) return *this;
@@ -99,7 +99,7 @@ public:
 		return *this;
 	}
 
-	//оператор перемещения
+
 	Vector& operator=(Vector&& other) {
 
 		if (this == &other) return *this;
@@ -197,6 +197,19 @@ void Vector<MySatur>::print() {
 	for (int i = 0; i < sz; i++) {
 		elem(i).print();
 		if (i < sz - 1) std::cout << ", ";
+	}
+	std::cout << "]";
+}
+
+template <>
+void Vector<My_Float>::print()
+{
+	std::cout << "[";
+	for (int i = 0; i < sz; i++)
+	{
+		elem(i).print();
+		if (i < sz - 1)
+			std::cout << ", ";
 	}
 	std::cout << "]";
 }
