@@ -23,6 +23,8 @@ Additionally, the project demonstrates usage of custom numeric types, including 
 
 ##  Build & Run
 
+In My_Vector directory:
+
 ### Using CMake
 
 ```bash
@@ -36,8 +38,8 @@ cmake --build .
 ### Using g++
 
 ```bash
-g++ src/main.cpp -Iinclude -o app
-./app
+g++ src/*.cpp -Iincludes -o app.exe
+app.exe
 ```
 
 
@@ -51,13 +53,11 @@ a[2] = 234.23;
 a.print(); // [3.1429[22/7], 0.0000[0/1], 234.2300[23423/100]]
 ```
 
----
 
 ##  Notes
 
 This is an educational project and does not aim to fully replicate `std::vector`.
 
----
 
 ##  Technologies
 
